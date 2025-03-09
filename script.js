@@ -33,22 +33,22 @@ async function checkWeather(city) {
 
         // if the object data in array class key main is equal to certain type, then change image
         if(data.weather[0].main === "Clouds"){
-                weatherIcon.src = "../images/clouds.png"
+                weatherIcon.src = "images/clouds.png"
             }
             else if(data.weather[0].main === "Clear"){
-                weatherIcon.src = "../images/clear.png"
+                weatherIcon.src = "images/clear.png"
             }
             else if(data.weather[0].main === "Drizzle"){
-                weatherIcon.src = "../images/drizzle.png"
+                weatherIcon.src = "images/drizzle.png"
             }
             else if(data.weather[0].main === "Mist"){
-                weatherIcon.src = "../images/mist.png"
+                weatherIcon.src = "images/mist.png"
             }
             else if(data.weather[0].main === "Rain"){
-                weatherIcon.src = "../images/rain.png"
+                weatherIcon.src = "images/rain.png"
             }
             else if(data.weather[0].main === "Snow"){
-                weatherIcon.src = "../images/snow.png"
+                weatherIcon.src = "images/snow.png"
             }
             // to hide the weather when it's before input
             hiddenWeather.style.display = 'block';
